@@ -556,8 +556,8 @@ function setupMusicControls() {
       if (isAudioPlaying) {
         // Fade out volume gently
         let fadeInterval = setInterval(() => {
-          if (bgmAudio.volume > 0.05) {
-            bgmAudio.volume -= 0.05;
+          if (bgmAudio.volume > 0.03) {
+            bgmAudio.volume -= 0.03;
           } else {
             clearInterval(fadeInterval);
             bgmAudio.pause();
