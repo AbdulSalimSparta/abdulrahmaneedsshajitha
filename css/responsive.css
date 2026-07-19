@@ -1,0 +1,225 @@
+/* ==========================================================================
+   RESPONSIVE.CSS - MULTI-DEVICE MEDIA QUERIES (CLEANED)
+   ========================================================================== */
+
+/* Laptop / Desktop adjustments (up to 1200px) */
+@media (max-width: 1200px) {
+  .parents-grid {
+    gap: 80px;
+  }
+}
+
+/* Tablet Portrait & Landscape (up to 992px) */
+@media (max-width: 992px) {
+  h1.huge-title {
+    font-size: 4.5rem;
+  }
+  
+  .parents-grid {
+    gap: 50px;
+  }
+  
+  .gallery-masonry {
+    column-count: 2;
+  }
+  
+  .details-calendar-clock {
+    gap: 40px;
+  }
+  
+  .details-block h3 {
+    font-size: 2.5rem;
+  }
+}
+
+/* Custom Mobile Envelope scaling (up to 768px) */
+@media (max-width: 768px) {
+  /* Full screen envelope experience on mobile devices */
+  .envelope-wrapper {
+    width: 100vw;
+    height: 100vh;
+    height: 100dvh;
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 0;
+    transform: none !important;
+    box-shadow: none;
+  }
+  
+  .envelope-flap-v.bottom-cover {
+    background-position: left 0 top -30dvh !important; /* Mobile seamless texture mapping alignment */
+  }
+  
+  .unfolding-card {
+    width: 92vw;
+    height: 80vh;
+    max-width: 420px;
+  }
+  
+  .card-inner-content {
+    padding: 30px 20px;
+  }
+  
+  .parents-grid {
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
+  
+  .parents-divider {
+    width: 80px;
+    height: 1px;
+    background-color: var(--border);
+  }
+  
+  .details-calendar-clock {
+    flex-direction: column;
+    gap: 30px;
+  }
+  
+  .countdown-grid {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .countdown-card {
+    width: 110px;
+    height: 110px;
+  }
+  
+  .countdown-val {
+    font-size: 2.2rem;
+  }
+  
+  .gallery-masonry {
+    column-count: 2;
+    column-gap: 15px;
+  }
+  
+  .rsvp-form-container {
+    padding: 25px;
+  }
+  
+  .audio-controller {
+    bottom: 20px;
+    right: 20px;
+  }
+  
+  .music-btn {
+    width: 46px;
+    height: 46px;
+  }
+  
+  .lightbox-nav {
+    font-size: 1.8rem;
+    padding: 10px;
+  }
+  
+  .lightbox-nav.prev {
+    left: -40px;
+  }
+  
+  .lightbox-nav.next {
+    right: -40px;
+  }
+  
+  /* Shrink margins of the inner gold frames on mobile */
+  .keynote-section::after {
+    top: 12px;
+    left: 12px;
+    right: 12px;
+    bottom: 12px;
+  }
+  
+  .floral-top-left {
+    top: 20px;
+    left: 20px;
+    width: 55px;
+    height: 55px;
+  }
+  
+  .floral-bottom-right {
+    bottom: 20px;
+    right: 20px;
+    width: 55px;
+    height: 55px;
+  }
+}
+
+/* Extra Small Devices (up to 480px) */
+@media (max-width: 480px) {
+  .envelope-wrapper {
+    transform: none !important;
+    width: 100vw;
+    height: 100vh;
+    height: 100dvh;
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 0;
+    box-shadow: none;
+  }
+  
+  h1.huge-title {
+    font-size: 2.8rem;
+  }
+  
+  .hero-names-vertical h1 {
+    font-size: clamp(1.8rem, 7.5vw, 2.5rem);
+    white-space: normal;
+    text-align: center;
+  }
+  
+  .hero-heart-separator::before,
+  .hero-heart-separator::after {
+    width: 30px;
+  }
+  
+  .hero-heart-separator::before {
+    right: 30px;
+  }
+  
+  .hero-heart-separator::after {
+    left: 30px;
+  }
+  
+  .quran-verse-arabic {
+    font-size: 1.6rem;
+  }
+  
+  .quran-verse-translation {
+    font-size: 1.35rem;
+  }
+  
+  .parents-column h2 {
+    font-size: 1.8rem;
+  }
+  
+  .details-block h3 {
+    font-size: 2.1rem;
+  }
+  
+  .countdown-grid {
+    gap: 10px;
+  }
+  
+  .countdown-card {
+    width: 85px;
+    height: 85px;
+  }
+  
+  .countdown-val {
+    font-size: 1.6rem;
+  }
+  
+  .gallery-masonry {
+    column-count: 1;
+  }
+  
+  .lightbox-nav {
+    display: none; /* Hide nav arrows on small screens, rely on click backdrop */
+  }
+  
+  .footer-dua {
+    font-size: 1.5rem;
+  }
+}
