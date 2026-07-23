@@ -1,5 +1,12 @@
 {
-  "builds": [
-    { "src": "index.html", "use": "@vercel/static" }
-  ]
+  "version": 2,
+  "public": true,
+  "routes": [
+    { "src": "/css/(.*)", "dest": "/public/css/$1" },
+    { "src": "/js/(.*)", "dest": "/public/js/$1" },
+    { "src": "/assets/(.*)", "dest": "/public/assets/$1" },
+    { "src": "/(.*)", "dest": "/index.html" }
+  ],
+  "cleanUrls": true,
+  "trailingSlash": false
 }
