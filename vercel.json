@@ -1,11 +1,6 @@
 {
   "version": 2,
   "routes": [
-    {
-      "src": "/(.*)",
-      "dest": "/index.html"
-    }
-  ],
-  "cleanUrls": true,
-  "trailingSlash": false
+    { "src": "/(.*)", "dest": "/index.html" }
+  ]
 }
